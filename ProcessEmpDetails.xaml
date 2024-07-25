@@ -13,7 +13,7 @@
     <x:Property Name="out_str_EmailTemplate" Type="OutArgument(x:String)" />
     <x:Property Name="in_LogFilePath" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1801,7546</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1293,7256</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -139,7 +139,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Config-EmailTemplate" sap:VirtualizedContainerService.HintSize="1811,7481" sap2010:WorkflowViewState.IdRef="Sequence_12">
+  <Sequence DisplayName="Config-EmailTemplate" sap:VirtualizedContainerService.HintSize="1303,7191" sap2010:WorkflowViewState.IdRef="Sequence_12">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:Byte[]" Name="DOB_ByteArray_ImageOfBallonLeft" />
       <Variable x:TypeArguments="s:Byte[]" Name="DOB_ByteArray_ImageOfBallonRight" />
@@ -210,7 +210,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1749,57" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Template Type is : &quot;+in_str_EmpTemplate]" UseDefaultEncoding="False">
+    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1241,57" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Template Type is : &quot;+in_str_EmpTemplate]" UseDefaultEncoding="False">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -218,7 +218,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AppendLine>
-    <If Condition="[String.IsNullOrEmpty(in_str_EmpTemplate)]" sap:VirtualizedContainerService.HintSize="1749,7336" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[String.IsNullOrEmpty(in_str_EmpTemplate)]" sap:VirtualizedContainerService.HintSize="1241,7046" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -252,14 +252,14 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1715,7150" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1207,6860" sap2010:WorkflowViewState.IdRef="Sequence_14">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Configure-EmailTemplate" sap:VirtualizedContainerService.HintSize="1653,7062" sap2010:WorkflowViewState.IdRef="TryCatch_20">
+          <TryCatch DisplayName="Configure-EmailTemplate" sap:VirtualizedContainerService.HintSize="1145,6772" sap2010:WorkflowViewState.IdRef="TryCatch_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -267,19 +267,19 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <umaf:UseDriveCard ApplicationId="{x:Null}" ContinueOnError="{x:Null}" TenantId="{x:Null}" Timeout="{x:Null}" Account="Please select an account." ConnectionAccountName="Microsoft OneDrive &amp; SharePoint" ConnectionId="878748a1-54d5-4415-ad1b-7262314d1b68" Connector="uipath-microsoft-onedrive" DisplayName="Use OneDrive &amp; SharePoint" sap:VirtualizedContainerService.HintSize="1615,6811" sap2010:WorkflowViewState.IdRef="UseDriveCard_1" UseConnectionService="True">
+              <umaf:UseDriveCard ApplicationId="{x:Null}" ContinueOnError="{x:Null}" TenantId="{x:Null}" Timeout="{x:Null}" Account="Please select an account." ConnectionAccountName="Microsoft OneDrive &amp; SharePoint" ConnectionId="878748a1-54d5-4415-ad1b-7262314d1b68" Connector="uipath-microsoft-onedrive" DisplayName="Use OneDrive &amp; SharePoint" sap:VirtualizedContainerService.HintSize="1107,6521" sap2010:WorkflowViewState.IdRef="UseDriveCard_1" UseConnectionService="True">
                 <umaf:UseDriveCard.Body>
                   <ActivityAction x:TypeArguments="umafc:IDriveMetadata">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="umafc:IDriveMetadata" Name="DriveLocation" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1581,6671" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1073,6381" sap2010:WorkflowViewState.IdRef="Sequence_15">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1519,57" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot;Pass : EmailTemplateType : &quot;+in_str_EmpTemplate.ToUpper.Trim]" UseDefaultEncoding="False">
+                      <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1011,57" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot;Pass : EmailTemplateType : &quot;+in_str_EmpTemplate.ToUpper.Trim]" UseDefaultEncoding="False">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -287,21 +287,21 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:AppendLine>
-                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_str_EmpTemplate.ToUpper.Trim]" sap:VirtualizedContainerService.HintSize="1519,6526" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_str_EmpTemplate.ToUpper.Trim]" sap:VirtualizedContainerService.HintSize="1011,6236" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence x:Key="DOB" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence x:Key="DOB" sap:VirtualizedContainerService.HintSize="416,69" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch DisplayName="DOB - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="905,2377" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                          <TryCatch DisplayName="DOB - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="905,2152" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -309,7 +309,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <Sequence DisplayName="DOB - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="867,2117" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                              <Sequence DisplayName="DOB - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="867,1892" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="mg:DriveItem" Name="DOB_EmailTemplate" />
                                   <Variable x:TypeArguments="x:Boolean" Name="IsExistsEmailTemplatePath" />
@@ -610,7 +610,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <TryCatch DisplayName="Read-DOBEmailTemplate" sap:VirtualizedContainerService.HintSize="805,556" sap2010:WorkflowViewState.IdRef="TryCatch_22">
+                                <TryCatch DisplayName="Read-DOBEmailTemplate" sap:VirtualizedContainerService.HintSize="805,331" sap2010:WorkflowViewState.IdRef="TryCatch_22">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -618,7 +618,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <TryCatch.Try>
-                                    <ui:ReadTextFile File="{x:Null}" Content="[out_str_EmailTemplate]" DisplayName="Read-DOBEmailTemplate" FileName="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+in_Config(&quot;emailTemplateNameOfDOB&quot;).ToString]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_4">
+                                    <ui:ReadTextFile File="{x:Null}" Content="[out_str_EmailTemplate]" DisplayName="Read-DOBEmailTemplate" FileName="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOB&quot;).ToString]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_4">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -628,10 +628,10 @@
                                     </ui:ReadTextFile>
                                   </TryCatch.Try>
                                   <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,371" sap2010:WorkflowViewState.IdRef="Catch`1_21">
+                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_21">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -1997,14 +1997,14 @@
                             </TryCatch.Catches>
                           </TryCatch>
                         </Sequence>
-                        <Sequence x:Key="DOJ" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <Sequence x:Key="DOJ" sap:VirtualizedContainerService.HintSize="516,1653" sap2010:WorkflowViewState.IdRef="Sequence_10">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch DisplayName="DOJ - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="1396,3703" sap2010:WorkflowViewState.IdRef="TryCatch_48">
+                          <TryCatch DisplayName="DOJ - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="454,320" sap2010:WorkflowViewState.IdRef="TryCatch_48">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2012,14 +2012,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <Sequence DisplayName="DOJ - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="1358,3443" sap2010:WorkflowViewState.IdRef="Sequence_103">
+                              <Sequence DisplayName="DOJ - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_103">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1296,165" sap2010:WorkflowViewState.IdRef="AppendLine_59" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; Find emailTemplateNameOfDOJ with path&quot; +in_Config(&quot;emailTemplatePath&quot;).ToString+&quot; with search query : &quot;+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" UseDefaultEncoding="False">
+                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="802,165" sap2010:WorkflowViewState.IdRef="AppendLine_59" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; Find emailTemplateNameOfDOJ with path&quot; +in_Config(&quot;emailTemplatePath&quot;).ToString+&quot; with search query : &quot;+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" UseDefaultEncoding="False">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2027,7 +2027,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:AppendLine>
-                                <TryCatch DisplayName="Find- DOJEmailTemplate" sap:VirtualizedContainerService.HintSize="1296,57" sap2010:WorkflowViewState.IdRef="TryCatch_45">
+                                <TryCatch DisplayName="Find- DOJEmailTemplate" sap:VirtualizedContainerService.HintSize="802,57" sap2010:WorkflowViewState.IdRef="TryCatch_45">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2083,7 +2083,7 @@
                                     </Catch>
                                   </TryCatch.Catches>
                                 </TryCatch>
-                                <If Condition="[IsNothing(DOJ_EmailTemplate)]" sap:VirtualizedContainerService.HintSize="1296,57" sap2010:WorkflowViewState.IdRef="If_23">
+                                <If Condition="[IsNothing(DOJ_EmailTemplate)]" sap:VirtualizedContainerService.HintSize="802,57" sap2010:WorkflowViewState.IdRef="If_23">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2135,7 +2135,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1296,165" sap2010:WorkflowViewState.IdRef="AppendLine_63" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; DOJ_EmailTemplate should be download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;]" UseDefaultEncoding="False">
+                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="802,165" sap2010:WorkflowViewState.IdRef="AppendLine_63" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; DOJ_EmailTemplate should be download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;]" UseDefaultEncoding="False">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2143,7 +2143,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:AppendLine>
-                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsEmailTemplatePath" Exists="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="1296,147" sap2010:WorkflowViewState.IdRef="PathExists_15" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString]" PathType="Folder">
+                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsEmailTemplatePath" Exists="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="802,147" sap2010:WorkflowViewState.IdRef="PathExists_15" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString]" PathType="Folder">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2151,7 +2151,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:PathExists>
-                                <If Condition="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="1296,658" sap2010:WorkflowViewState.IdRef="If_24">
+                                <If Condition="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="802,658" sap2010:WorkflowViewState.IdRef="If_24">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2193,7 +2193,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1296,165" sap2010:WorkflowViewState.IdRef="AppendLine_66" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot;DOJ_EmailTemplate download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" UseDefaultEncoding="False">
+                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="802,165" sap2010:WorkflowViewState.IdRef="AppendLine_66" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot;DOJ_EmailTemplate download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" UseDefaultEncoding="False">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2201,7 +2201,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:AppendLine>
-                                <TryCatch DisplayName="Download - DOJ_EmailTemplate" sap:VirtualizedContainerService.HintSize="1296,393" sap2010:WorkflowViewState.IdRef="TryCatch_46">
+                                <TryCatch DisplayName="Download - DOJ_EmailTemplate" sap:VirtualizedContainerService.HintSize="802,393" sap2010:WorkflowViewState.IdRef="TryCatch_46">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2257,7 +2257,7 @@
                                     </Catch>
                                   </TryCatch.Catches>
                                 </TryCatch>
-                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsTemplateFilePath" Exists="[IsDOJEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="1296,147" sap2010:WorkflowViewState.IdRef="PathExists_16" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" PathType="File">
+                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsTemplateFilePath" Exists="[IsDOJEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="802,147" sap2010:WorkflowViewState.IdRef="PathExists_16" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" PathType="File">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2265,7 +2265,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:PathExists>
-                                <If Condition="[IsDOJEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="1296,780" sap2010:WorkflowViewState.IdRef="If_25">
+                                <If Condition="[IsDOJEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="802,780" sap2010:WorkflowViewState.IdRef="If_25">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2308,7 +2308,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <TryCatch DisplayName="Read-DOJEmailTemplate" sap:VirtualizedContainerService.HintSize="1296,621" sap2010:WorkflowViewState.IdRef="TryCatch_47">
+                                <TryCatch DisplayName="Read-DOJEmailTemplate" sap:VirtualizedContainerService.HintSize="802,331" sap2010:WorkflowViewState.IdRef="TryCatch_47">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2316,7 +2316,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <TryCatch.Try>
-                                    <ui:ReadTextFile File="{x:Null}" Content="[out_str_EmailTemplate]" DisplayName="Read-DOJEmailTemplate" FileName="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_6">
+                                    <ui:ReadTextFile File="{x:Null}" Content="[out_str_EmailTemplate]" DisplayName="Read-DOJEmailTemplate" FileName="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOJ&quot;).ToString]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2326,10 +2326,10 @@
                                     </ui:ReadTextFile>
                                   </TryCatch.Try>
                                   <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,436" sap2010:WorkflowViewState.IdRef="Catch`1_36">
+                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_36">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -2367,7 +2367,7 @@
                               </Sequence>
                             </TryCatch.Try>
                             <TryCatch.Catches>
-                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1362,22" sap2010:WorkflowViewState.IdRef="Catch`1_37">
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="420,22" sap2010:WorkflowViewState.IdRef="Catch`1_37">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2390,7 +2390,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1396,57" sap2010:WorkflowViewState.IdRef="AppendLine_71" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; EmpImageName path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOJ_ImageOfEmpName&quot;).ToString+in_str_EmpImageName+&quot;.jpg&quot;]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="AppendLine_71" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; EmpImageName path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOJ_ImageOfEmpName&quot;).ToString+in_str_EmpImageName+&quot;.jpg&quot;]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2398,7 +2398,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="IsExistsDOJ_ImageOfEmpName" sap:VirtualizedContainerService.HintSize="1396,57" sap2010:WorkflowViewState.IdRef="TryCatch_49">
+                          <TryCatch DisplayName="IsExistsDOJ_ImageOfEmpName" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_49">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2454,7 +2454,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <If Condition="[IsExistsDOJ_ImageOfEmpName]" sap:VirtualizedContainerService.HintSize="1396,57" sap2010:WorkflowViewState.IdRef="If_20">
+                          <If Condition="[IsExistsDOJ_ImageOfEmpName]" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="If_20">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2504,7 +2504,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <TryCatch DisplayName="Configure-DOJ_ImageOfEmpName" sap:VirtualizedContainerService.HintSize="1396,57" sap2010:WorkflowViewState.IdRef="TryCatch_50">
+                          <TryCatch DisplayName="Configure-DOJ_ImageOfEmpName" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_50">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2588,7 +2588,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1396,57" sap2010:WorkflowViewState.IdRef="AppendLine_76" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; DOJ_ImageOfLogo path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOJ_ImageOfLogo&quot;).ToString]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="454,72" sap2010:WorkflowViewState.IdRef="AppendLine_76" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; DOJ_ImageOfLogo path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOJ_ImageOfLogo&quot;).ToString]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2596,7 +2596,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="IsExistsDOJ_ImageOfLogo" sap:VirtualizedContainerService.HintSize="1396,57" sap2010:WorkflowViewState.IdRef="TryCatch_51">
+                          <TryCatch DisplayName="IsExistsDOJ_ImageOfLogo" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_51">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2652,7 +2652,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <If Condition="[IsExistsDOJ_ImageOfLogo]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="If_21">
+                          <If Condition="[IsExistsDOJ_ImageOfLogo]" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="If_21">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2702,7 +2702,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <TryCatch DisplayName="Configure-DOJ_ImageOfLogo" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="TryCatch_52">
+                          <TryCatch DisplayName="Configure-DOJ_ImageOfLogo" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_52">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2786,7 +2786,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="AppendLine_81" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; DOJ_ImageOfWorkAnniversary path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOJ_ImageOfWorkAnniversary&quot;).ToString]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="AppendLine_81" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; DOJ_ImageOfWorkAnniversary path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOJ_ImageOfWorkAnniversary&quot;).ToString]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2794,7 +2794,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="IsExistsDOJ_ImageOfWorkAnniversary" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="TryCatch_53">
+                          <TryCatch DisplayName="IsExistsDOJ_ImageOfWorkAnniversary" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_53">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2850,7 +2850,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <If Condition="[IsExistsDOJ_ImageOfWorkAnniversary]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="If_22">
+                          <If Condition="[IsExistsDOJ_ImageOfWorkAnniversary]" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="If_22">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2900,7 +2900,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <TryCatch DisplayName="Configure-DOJ_ImageOfWorkAnniversary" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="TryCatch_54">
+                          <TryCatch DisplayName="Configure-DOJ_ImageOfWorkAnniversary" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_54">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2984,7 +2984,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="AppendLine_86" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; Configure DOJ-EmailTemplate with : &quot;+ in_str_EmpName+&quot; &quot; +in_str_EmpWishName+&quot; &quot; +in_str_EmpDepartment+&quot; &quot; +in_str_EmpYears]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="AppendLine_86" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; Configure DOJ-EmailTemplate with : &quot;+ in_str_EmpName+&quot; &quot; +in_str_EmpWishName+&quot; &quot; +in_str_EmpDepartment+&quot; &quot; +in_str_EmpYears]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2992,7 +2992,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="Configure - DOJEmailTemplate" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="TryCatch_55">
+                          <TryCatch DisplayName="Configure - DOJEmailTemplate" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_55">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3048,7 +3048,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="AppendLine_88" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; Configure Email Subject Line with : &quot;+&quot;Happy Work Anniversary ::  &quot;+in_str_EmpName+&quot; ( &quot;+in_str_EmpDepartment+&quot; ) &quot;]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="AppendLine_88" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOJ : &quot;+&quot; Configure Email Subject Line with : &quot;+&quot;Happy Work Anniversary ::  &quot;+in_str_EmpName+&quot; ( &quot;+in_str_EmpDepartment+&quot; ) &quot;]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3056,7 +3056,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="Configure - DOJEmailSubjectLine" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="TryCatch_56">
+                          <TryCatch DisplayName="Configure - DOJEmailSubjectLine" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="TryCatch_56">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3098,7 +3098,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_22">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_127">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -3161,7 +3161,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_23">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_128">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -3283,7 +3283,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_24">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_129">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -3388,7 +3388,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="CommentOut_25">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_25">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_130">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -3493,7 +3493,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="CommentOut_26">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_26">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="534,421" sap2010:WorkflowViewState.IdRef="Sequence_131">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -3544,7 +3544,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="CommentOut_27">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="454,48" sap2010:WorkflowViewState.IdRef="CommentOut_27">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="534,421" sap2010:WorkflowViewState.IdRef="Sequence_132">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -3596,14 +3596,14 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
                         </Sequence>
-                        <Sequence x:Key="DOW" sap:VirtualizedContainerService.HintSize="1479,6275" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <Sequence x:Key="DOW" sap:VirtualizedContainerService.HintSize="971,5985" sap2010:WorkflowViewState.IdRef="Sequence_11">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch DisplayName="DOW - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="1417,4714" sap2010:WorkflowViewState.IdRef="TryCatch_60">
+                          <TryCatch DisplayName="DOW - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="909,4424" sap2010:WorkflowViewState.IdRef="TryCatch_60">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3611,14 +3611,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <Sequence DisplayName="DOW - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="1379,4454" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                              <Sequence DisplayName="DOW - ReadTemplateFile" sap:VirtualizedContainerService.HintSize="871,4164" sap2010:WorkflowViewState.IdRef="Sequence_142">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1317,165" sap2010:WorkflowViewState.IdRef="AppendLine_90" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; Find emailTemplateNameOfDOW with path&quot; +in_Config(&quot;emailTemplatePath&quot;).ToString+&quot; with search query : &quot;+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" UseDefaultEncoding="False">
+                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="809,165" sap2010:WorkflowViewState.IdRef="AppendLine_90" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; Find emailTemplateNameOfDOW with path&quot; +in_Config(&quot;emailTemplatePath&quot;).ToString+&quot; with search query : &quot;+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" UseDefaultEncoding="False">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3626,7 +3626,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:AppendLine>
-                                <TryCatch DisplayName="Find- DOWEmailTemplate" sap:VirtualizedContainerService.HintSize="1317,345" sap2010:WorkflowViewState.IdRef="TryCatch_57">
+                                <TryCatch DisplayName="Find- DOWEmailTemplate" sap:VirtualizedContainerService.HintSize="809,345" sap2010:WorkflowViewState.IdRef="TryCatch_57">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3655,7 +3655,7 @@
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                         </ActivityAction.Argument>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="450,366" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="416,366" sap2010:WorkflowViewState.IdRef="Sequence_133">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3682,7 +3682,7 @@
                                     </Catch>
                                   </TryCatch.Catches>
                                 </TryCatch>
-                                <If Condition="[IsNothing(DOW_EmailTemplate)]" sap:VirtualizedContainerService.HintSize="1317,780" sap2010:WorkflowViewState.IdRef="If_26">
+                                <If Condition="[IsNothing(DOW_EmailTemplate)]" sap:VirtualizedContainerService.HintSize="809,780" sap2010:WorkflowViewState.IdRef="If_26">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3734,7 +3734,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1317,165" sap2010:WorkflowViewState.IdRef="AppendLine_94" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_EmailTemplate should be download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;]" UseDefaultEncoding="False">
+                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="809,165" sap2010:WorkflowViewState.IdRef="AppendLine_94" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_EmailTemplate should be download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;]" UseDefaultEncoding="False">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3742,7 +3742,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:AppendLine>
-                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsEmailTemplatePath" Exists="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="1317,147" sap2010:WorkflowViewState.IdRef="PathExists_20" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString]" PathType="Folder">
+                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsEmailTemplatePath" Exists="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="809,147" sap2010:WorkflowViewState.IdRef="PathExists_20" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString]" PathType="Folder">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3750,7 +3750,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:PathExists>
-                                <If Condition="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="1317,658" sap2010:WorkflowViewState.IdRef="If_27">
+                                <If Condition="[IsExistsEmailTemplatePath]" sap:VirtualizedContainerService.HintSize="809,658" sap2010:WorkflowViewState.IdRef="If_27">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3792,7 +3792,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1317,165" sap2010:WorkflowViewState.IdRef="AppendLine_97" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot;DOW_EmailTemplate download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" UseDefaultEncoding="False">
+                                <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="809,165" sap2010:WorkflowViewState.IdRef="AppendLine_97" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot;DOW_EmailTemplate download at location : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" UseDefaultEncoding="False">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3800,7 +3800,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:AppendLine>
-                                <TryCatch DisplayName="Download - DOW_EmailTemplate" sap:VirtualizedContainerService.HintSize="1317,393" sap2010:WorkflowViewState.IdRef="TryCatch_58">
+                                <TryCatch DisplayName="Download - DOW_EmailTemplate" sap:VirtualizedContainerService.HintSize="809,393" sap2010:WorkflowViewState.IdRef="TryCatch_58">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3856,7 +3856,7 @@
                                     </Catch>
                                   </TryCatch.Catches>
                                 </TryCatch>
-                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsTemplateFilePath" Exists="[IsDOWEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="1317,147" sap2010:WorkflowViewState.IdRef="PathExists_21" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" PathType="File">
+                                <ui:PathExists Resource="{x:Null}" DisplayName="IsExistsTemplateFilePath" Exists="[IsDOWEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="809,147" sap2010:WorkflowViewState.IdRef="PathExists_21" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" PathType="File">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3864,7 +3864,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:PathExists>
-                                <If Condition="[IsDOJEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="1317,780" sap2010:WorkflowViewState.IdRef="If_28">
+                                <If Condition="[IsDOWEmailTemplateExist]" sap:VirtualizedContainerService.HintSize="809,780" sap2010:WorkflowViewState.IdRef="If_28">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3907,7 +3907,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <TryCatch DisplayName="Read-DOWEmailTemplate" sap:VirtualizedContainerService.HintSize="1317,621" sap2010:WorkflowViewState.IdRef="TryCatch_59">
+                                <TryCatch DisplayName="Read-DOWEmailTemplate" sap:VirtualizedContainerService.HintSize="809,331" sap2010:WorkflowViewState.IdRef="TryCatch_59">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3915,7 +3915,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <TryCatch.Try>
-                                    <ui:ReadTextFile File="{x:Null}" Content="[out_str_EmailTemplate]" DisplayName="Read-DOWEmailTemplate" FileName="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_7">
+                                    <ui:ReadTextFile File="{x:Null}" Content="[out_str_EmailTemplate]" DisplayName="Read-DOWEmailTemplate" FileName="[Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;emailTemplatePath&quot;).ToString+&quot;\&quot;+in_Config(&quot;emailTemplateNameOfDOW&quot;).ToString]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_7">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3925,10 +3925,10 @@
                                     </ui:ReadTextFile>
                                   </TryCatch.Try>
                                   <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,436" sap2010:WorkflowViewState.IdRef="Catch`1_48">
+                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_48">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -3966,7 +3966,7 @@
                               </Sequence>
                             </TryCatch.Try>
                             <TryCatch.Catches>
-                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1383,22" sap2010:WorkflowViewState.IdRef="Catch`1_49">
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="875,22" sap2010:WorkflowViewState.IdRef="Catch`1_49">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3989,7 +3989,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1417,57" sap2010:WorkflowViewState.IdRef="AppendLine_102" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_ImageOfFlowerleft path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOW_ImageOfFlowerleft&quot;).ToString]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="AppendLine_102" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_ImageOfFlowerleft path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOW_ImageOfFlowerleft&quot;).ToString]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3997,7 +3997,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="IsExistsDOW_ImageOfFlowerleft" sap:VirtualizedContainerService.HintSize="1417,57" sap2010:WorkflowViewState.IdRef="TryCatch_61">
+                          <TryCatch DisplayName="IsExistsDOW_ImageOfFlowerleft" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="TryCatch_61">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4053,7 +4053,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <If Condition="[IsExistsDOW_ImageOfFlowerleft]" sap:VirtualizedContainerService.HintSize="1417,57" sap2010:WorkflowViewState.IdRef="If_29">
+                          <If Condition="[IsExistsDOW_ImageOfFlowerleft]" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="If_29">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4103,7 +4103,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <TryCatch DisplayName="Configure-DOW_ImageOfFlowerleft" sap:VirtualizedContainerService.HintSize="1417,57" sap2010:WorkflowViewState.IdRef="TryCatch_62">
+                          <TryCatch DisplayName="Configure-DOW_ImageOfFlowerleft" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="TryCatch_62">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4187,7 +4187,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="1417,57" sap2010:WorkflowViewState.IdRef="AppendLine_107" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_ImageOfFlowersRight path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOW_ImageOfFlowersRight&quot;).ToString]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="AppendLine_107" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_ImageOfFlowersRight path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOW_ImageOfFlowersRight&quot;).ToString]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4195,7 +4195,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="IsExistsDOW_ImageOfFlowersRight" sap:VirtualizedContainerService.HintSize="1417,57" sap2010:WorkflowViewState.IdRef="TryCatch_63">
+                          <TryCatch DisplayName="IsExistsDOW_ImageOfFlowersRight" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="TryCatch_63">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4251,7 +4251,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <If Condition="[IsExistsDOW_ImageOfFlowersRight]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="If_30">
+                          <If Condition="[IsExistsDOW_ImageOfFlowersRight]" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="If_30">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4301,7 +4301,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <TryCatch DisplayName="Configure-DOW_ImageOfFlowersRight" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="TryCatch_64">
+                          <TryCatch DisplayName="Configure-DOW_ImageOfFlowersRight" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="TryCatch_64">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4385,7 +4385,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="AppendLine_112" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_ImageOfHands path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOW_ImageOfHands&quot;).ToString]" UseDefaultEncoding="False">
+                          <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="AppendLine_112" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; DOW : &quot;+&quot; DOW_ImageOfHands path is &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;DOW_ImageOfHands&quot;).ToString]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4393,7 +4393,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <TryCatch DisplayName="IsExistsDOW_ImageOfHands" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="TryCatch_65">
+                          <TryCatch DisplayName="IsExistsDOW_ImageOfHands" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="TryCatch_65">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4449,7 +4449,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <If Condition="[IsExistsDOW_ImageOfHands]" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="If_31">
+                          <If Condition="[IsExistsDOW_ImageOfHands]" sap:VirtualizedContainerService.HintSize="909,57" sap2010:WorkflowViewState.IdRef="If_31">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -5471,7 +5471,7 @@
               </umaf:UseDriveCard>
             </TryCatch.Try>
             <TryCatch.Catches>
-              <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1619,22" sap2010:WorkflowViewState.IdRef="Catch`1_60">
+              <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1111,22" sap2010:WorkflowViewState.IdRef="Catch`1_60">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
