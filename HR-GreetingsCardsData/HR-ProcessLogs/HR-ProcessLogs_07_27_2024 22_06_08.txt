@@ -1,0 +1,30 @@
+﻿Log File Created Successfully 07/27/2024 22:06:08
+07/27/2024 22:06:08 : HR-Performer :  Get Transaction Data 
+07/27/2024 22:06:08 : HR-Performer :  Get Transaction Data : 103 Sonu IT-RPA DOB NA testsk212@outlook.com Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday! NA
+07/27/2024 22:06:08 : HR-Performer :  GenerateEmailGreetingCardTemplate 
+07/27/2024 22:06:09 : HR-Performer :  Template Type is : DOB
+07/27/2024 22:06:10 : HR-Performer : Pass : EmailTemplateType : DOB
+07/27/2024 22:06:10 : HR-Performer DOB :  Find emailTemplateNameOfDOB with pathHR-GreetingsCardsData\EmailTemplate with search query : DOB_Template.html
+07/27/2024 22:06:13 : HR-Performer DOB : Found DOB_EmailTemplate is found at one drive location
+07/27/2024 22:06:13 : HR-Performer DOB :  DOB_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+07/27/2024 22:06:13 : HR-Performer DOB :  DOB_EmailTemplateFolderPath is Exist.
+07/27/2024 22:06:13 : HR-Performer DOB : DOB_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_EmailTemplate is available at location 07/27/2024 22:06:14 : HR-Performer DOB : DOB_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfBallonLeft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfBallonLeft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfBallonRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfBallonRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter  path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\birthDayFiftFooter.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfBirthdayGift  path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfBirthdayGift is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfClouds path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfClouds is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+07/27/2024 22:06:14 : HR-Performer DOB :  DOB_ImageOfHappyBirthday path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+07/27/2024 22:06:14 : HR-Performer DOB :  IsExistsDOB_ImageOfHappyBirthday is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+07/27/2024 22:06:14 : HR-Performer DOB :  Configure DOB-EmailTemplate with : Sonu Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!
+07/27/2024 22:06:14 : HR-Performer DOB :  Configure Email Subject Line with : Happy Birthday ::  Sonu ( IT-RPA ) 
+07/27/2024 22:06:14 : HR-Performer :  Send EmailTemplate To Emp 
+07/27/2024 22:06:14 : HR-Performer :  Get Credentails from folder Name and Asset Name is : Demo_Projects :  outlookCreds 
+07/27/2024 22:06:15 : HR-Performer :  Send Mail with details : TO : testsk212@outlook.com SubjectLine : Happy Birthday ::  Sonu ( IT-RPA ) 
+07/27/2024 22:06:15 : HR-Performer :  Found Exception while sendMailToEmp An attempt was made to access a socket in a way forbidden by its access permissions.
