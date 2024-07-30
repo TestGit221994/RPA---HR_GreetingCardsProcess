@@ -1,0 +1,17 @@
+﻿ Log File has been created : Log File Created Successfully 07/30/2024 18:55:00
+07/30/2024 18:55:00 :  HR-Performer  Get New Transaction :  ||||||| 1
+07/30/2024 18:55:01 : HR-Performer :  Get Transaction Data 
+07/30/2024 18:55:01 : HR-Performer :  Found Exception while Get Transaction Data Found Exception while Get Transaction Data Can not assign 'in_TransactionItem.SpecificContent("EmpbID").ToString' to 'out_str_EmpID'.
+07/30/2024 18:55:58 :  HR-Performer  Get New Transaction :  ||||||| 2
+07/30/2024 18:55:59 : HR-Performer :  Get Transaction Data 
+07/30/2024 18:55:59 : HR-Performer :  Found Exception while Get Transaction Data Found Exception while Get Transaction Data Can not assign 'in_TransactionItem.SpecificContent("EmpbID").ToString' to 'out_str_EmpID'.
+07/30/2024 18:56:01 :  HR-Performer  Get New Transaction :  ||||||| 3
+07/30/2024 18:56:01 : HR-Performer :  Get Transaction Data 
+07/30/2024 18:56:01 : HR-Performer :  Found Exception while Get Transaction Data Found Exception while Get Transaction Data Can not assign 'in_TransactionItem.SpecificContent("EmpbID").ToString' to 'out_str_EmpID'.
+07/30/2024 18:56:06 :  HR-Performer  Get New Transaction :  ||||||| 3
+07/30/2024 18:56:06 : HR-Performer :  Get Transaction Data 
+07/30/2024 18:56:06 : HR-Performer :  Found Exception while Get Transaction Data Found Exception while Get Transaction Data Can not assign 'in_TransactionItem.SpecificContent("EmpbID").ToString' to 'out_str_EmpID'.
+07/30/2024 18:56:14 :  HR-Performer  Get New Transaction :  ||||||| 4
+07/30/2024 18:56:15 : HR-Performer :  Get Transaction Data 
+07/30/2024 18:56:15 : HR-Performer :  Found Exception while Get Transaction Data Found Exception while Get Transaction Data Can not assign 'in_TransactionItem.SpecificContent("EmpbID").ToString' to 'out_str_EmpID'.
+07/30/2024 18:56:17 :  HR-Performer  Get New Transaction :  ||||||| 5

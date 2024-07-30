@@ -3,11 +3,12 @@
     <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_LogFilePath" Type="InArgument(x:String)" />
+    <x:Property Name="in_TransactionNo" Type="InArgument(x:Int32)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1239,1118</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1239,508</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -52,6 +53,7 @@
       <x:String>UiPath.Mail.Exchange</x:String>
       <x:String>UiPath.Mail.Exchange.Activities</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -128,9 +130,10 @@
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendGreetingsCards" sap:VirtualizedContainerService.HintSize="500,1053" sap2010:WorkflowViewState.IdRef="Sequence_13">
+  <Sequence DisplayName="SendGreetingsCards" sap:VirtualizedContainerService.HintSize="416,421" sap2010:WorkflowViewState.IdRef="Sequence_13">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_EmpID" />
       <Variable x:TypeArguments="x:String" Name="str_EmpName" />
@@ -149,7 +152,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="438,57" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Get Transaction Data &quot;]" UseDefaultEncoding="False">
+    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Get Transaction Data &quot;]" UseDefaultEncoding="False">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -157,7 +160,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AppendLine>
-    <TryCatch DisplayName="getEmpDetailsFromQueue" sap:VirtualizedContainerService.HintSize="438,57" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="getEmpDetailsFromQueue" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -167,57 +170,87 @@
       <TryCatch.Try>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="getDataFromQueue.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="336,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="getDataFromQueue.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">
-              <VisualBasicValue x:TypeArguments="ui:QueueItem" ExpressionText="in_TransactionItem" />
-            </InArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpName">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpName" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpDepartment">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpDepartment" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmailTemplate">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpTemplate" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpYears">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpYears" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpEmailID">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpEmailID" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpWishesName">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpWishesName" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpImageName">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpImageName" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpID">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmpID" />
-            </OutArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_LogFilePath" />
-            </InArgument>
+            <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpName">[str_EmpName]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpDepartment">[str_EmpDepartment]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmailTemplate">[str_EmpTemplate]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpYears">[str_EmpYears]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpEmailID">[str_EmpEmailID]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpWishesName">[str_EmpWishesName]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpImageName">[str_EmpImageName]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmpID">[str_EmpID]</OutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_LogFilePath]</InArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="422,428" sap2010:WorkflowViewState.IdRef="Catch`1_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ActivityAction x:TypeArguments="s:Exception">
+          <ActivityAction x:TypeArguments="ui:BusinessRuleException">
             <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
             </ActivityAction.Argument>
-            <Rethrow sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            <Sequence sap:VirtualizedContainerService.HintSize="416,358" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,165" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Found Exception while Get Transaction Data&quot;+exception.Message]" UseDefaultEncoding="False">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendLine>
+              <TryCatch DisplayName="SendMailOnTransactionFailed" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendMailOnTransactionFailed" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="SendSMTPMailMessageOnFailure.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SupportMailID">[in_Config("SupportEmailID").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SupportSubjectLine">[in_Config("SupportEmailSubjectOnError").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_ErrorMessageDetails">[" Failed | HR - GreetingCards | Performer Process | Transaction No : "+in_TransactionNo.ToString+" Exception Message "+exception.Message]</InArgument>
+                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_LogFilePath]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Found exception while SendMailOnTractionFailed&quot;+exception.Message]" UseDefaultEncoding="False" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <Rethrow sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Rethrow_4" />
+            </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="438,57" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; GenerateEmailGreetingCardTemplate &quot;]" UseDefaultEncoding="False">
+    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; GenerateEmailGreetingCardTemplate &quot;]" UseDefaultEncoding="False">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -225,73 +258,99 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AppendLine>
-    <TryCatch DisplayName="GenerateGreetingCardTemplate" sap:VirtualizedContainerService.HintSize="438,373" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="GenerateGreetingCardTemplate" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessEmpDetails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ProcessEmpDetails.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GenerateGreetingCardTemplate" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ProcessEmpDetails.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-              <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpID">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpID" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpName">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpName" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpDepartment">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpDepartment" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpTemplate">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpTemplate" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpYears">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpYears" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpEmailID">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpEmailID" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpWishName">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpWishesName" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpImageName">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpImageName" />
-            </InArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_SubjectLine">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_SubjectLine" />
-            </OutArgument>
-            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmailTemplate">
-              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_EmailTemplate" />
-            </OutArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_LogFilePath" />
-            </InArgument>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpID">[str_EmpID]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpName">[str_EmpName]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpDepartment">[str_EmpDepartment]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpTemplate">[str_EmpTemplate]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpYears">[str_EmpYears]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpEmailID">[str_EmpEmailID]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpWishName">[str_EmpWishesName]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpImageName">[str_EmpImageName]</InArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_SubjectLine">[str_SubjectLine]</OutArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_str_EmailTemplate">[str_EmailTemplate]</OutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_LogFilePath]</InArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="422,320" sap2010:WorkflowViewState.IdRef="Catch`1_8">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ActivityAction x:TypeArguments="s:Exception">
+          <ActivityAction x:TypeArguments="ui:BusinessRuleException">
             <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
             </ActivityAction.Argument>
-            <Rethrow sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Rethrow_2" />
+            <Sequence sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Found Exception while GenerateGreetingCardTemplate &quot;+exception.Message]" UseDefaultEncoding="False">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendLine>
+              <TryCatch DisplayName="SendMailOnTransactionFailed" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendMailOnTransactionFailed" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="SendSMTPMailMessageOnFailure.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SupportMailID">[in_Config("SupportEmailID").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SupportSubjectLine">[in_Config("SupportEmailSubjectOnError").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_ErrorMessageDetails">[" Failed | HR - GreetingCards | Performer Process | Transaction No : "+in_TransactionNo.ToString+" Exception Message "+exception.Message]</InArgument>
+                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_LogFilePath]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Found exception while SendMailOnTractionFailed&quot;+exception.Message]" UseDefaultEncoding="False" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <Rethrow sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Rethrow_5" />
+            </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="438,57" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Send EmailTemplate To Emp &quot;]" UseDefaultEncoding="False">
+    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Send EmailTemplate To Emp &quot;]" UseDefaultEncoding="False">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -299,28 +358,21 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AppendLine>
-    <TryCatch DisplayName="SendGreetingCardTemplate" sap:VirtualizedContainerService.HintSize="438,364" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="SendGreetingCardTemplate" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="TryCatch_9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendSMTPMailMessage.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="343,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="SendSMTPMailMessage.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendGreetingCardTemplate" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="SendSMTPMailMessage.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpEmailID">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmpEmailID" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_SubjectLine">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_SubjectLine" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmailTemplate">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_EmailTemplate" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_LogFilePath" />
-            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmpEmailID">[str_EmpEmailID]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_SubjectLine">[str_SubjectLine]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_str_EmailTemplate">[str_EmailTemplate]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_LogFilePath]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_SupportMailID">[in_Config("SupportEmailID").ToString]</InArgument>
           </ui:InvokeWorkflowFile.Arguments>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -331,18 +383,68 @@
         </ui:InvokeWorkflowFile>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="422,320" sap2010:WorkflowViewState.IdRef="Catch`1_9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ActivityAction x:TypeArguments="s:Exception">
+          <ActivityAction x:TypeArguments="ui:BusinessRuleException">
             <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
             </ActivityAction.Argument>
-            <Rethrow sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Rethrow_3" />
+            <Sequence sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="Sequence_17">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Found Exception while SendGreetingCardTemplate  &quot;+exception.Message]" UseDefaultEncoding="False">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendLine>
+              <TryCatch DisplayName="SendMailOnTransactionFailed" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendMailOnTransactionFailed" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="SendSMTPMailMessageOnFailure.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SupportMailID">[in_Config("SupportEmailID").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SupportSubjectLine">[in_Config("SupportEmailSubjectOnError").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_ErrorMessageDetails">[" Failed | HR - GreetingCards | Performer Process | Transaction No : "+in_TransactionNo.ToString+" Exception Message "+exception.Message]</InArgument>
+                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_LogFilePath]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="AppendLine_11" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Performer&quot;+&quot; : &quot;+&quot; Found exception while SendMailOnTractionFailed&quot;+exception.Message]" UseDefaultEncoding="False" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <Rethrow sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Rethrow_7" />
+            </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
