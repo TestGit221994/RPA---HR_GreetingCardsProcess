@@ -1,0 +1,63 @@
+﻿ Log File has been created : Log File Created Successfully 08/03/2024 12:24:14
+08/03/2024 12:24:15 :  HR-Performer  Get New Transaction :  ||||||| 1
+08/03/2024 12:24:15 : HR-Performer :  ||| Transaction No : 1 has been started |||
+08/03/2024 12:24:15 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 104
+EmpName : Abhi
+EmpDepartment : IT-RPA
+EmailTemplate : DOB
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Happy birthday! I hope all your birthday wishes and dreams come true.
+EmpImageName : NA
+
+08/03/2024 12:24:15 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/03/2024 12:24:16 : HR-Performer EmailTemplate :  Template Type is : DOB
+08/03/2024 12:24:17 : HR-Performer DOB :  Find emailTemplateNameOfDOB with RemotePath
+HR-GreetingsCardsData\EmailTemplate
+ Search Query : DOB_Template.html
+08/03/2024 12:24:18 : HR-Performer DOB : Found DOB_EmailTemplate is found at one drive location
+08/03/2024 12:24:18 : HR-Performer DOB :  DOB_EmailTemplate should be download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/03/2024 12:24:18 : HR-Performer DOB :  DOB_EmailTemplateFolderPath is Exist.
+08/03/2024 12:24:18 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/03/2024 12:24:20 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfBallonLeft path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfBallonLeft is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfBallonRight path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfBallonRight is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\birthDayFiftFooter.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfBirthdayGift  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfBirthdayGift is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfClouds path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfClouds is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/03/2024 12:24:20 : HR-Performer DOB :  DOB_ImageOfHappyBirthday path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/03/2024 12:24:20 : HR-Performer DOB :  IsExistsDOB_ImageOfHappyBirthday is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/03/2024 12:24:20 : HR-Performer DOB :  Configure DOB-EmailTemplate with : 
+EmpName : Abhi
+EmpWishName :  Happy birthday! I hope all your birthday wishes and dreams come true.
+08/03/2024 12:24:20 : HR-Performer DOB :  Configure Email Subject Line with : 
+Happy Birthday ::  Abhi ( IT-RPA ) 
+08/03/2024 12:24:20 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/03/2024 12:24:20 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Birthday ::  Abhi ( IT-RPA ) 
+08/03/2024 12:24:21 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Birthday ::  Abhi ( IT-RPA ) 
+08/03/2024 12:24:21 : HR-Performer :  ||| Transaction No : 1 has been process successfully. |||
+08/03/2024 12:24:21 :  HR-Performer  Get New Transaction :  ||||||| 2
