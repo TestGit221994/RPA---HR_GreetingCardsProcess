@@ -1,0 +1,24 @@
+﻿ Log File has been created : Log File Created Successfully 08/09/2024 13:58:20
+08/09/2024 13:58:36 :  HR-Performer  Get New Transaction :  ||||||| 1
+08/09/2024 13:58:36 : HR-Performer :  ||| Transaction No : 1 has been started |||
+08/09/2024 13:58:36 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 2727
+EmpName : Karanbir Kaur
+EmpDepartment : Creative Labs
+EmailTemplate : DOJ
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Only a few people like you can actually show utmost dedication at their jobs. We congratulate you for being with us and wish you a happy work anniversary.
+EmpImageName : 2727
+
+08/09/2024 13:58:36 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 13:58:37 : HR-Performer EmailTemplate :  Template Type is : DOJ
+08/09/2024 13:58:39 : HR-Performer DOJ :  Find emailTemplateNameOfDOJ with pathHR-GreetingsCardsData\EmailTemplate with search query : DOJ_Template.html
+08/09/2024 13:58:41 : HR-Performer DOJ : Found DOJ_EmailTemplate is found at one drive location
+08/09/2024 13:58:41 : HR-Performer DOJ :  DOJ_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 13:58:41 : HR-Performer DOJ :  DOJ_EmailTemplateFolderPath is Exist.
+08/09/2024 13:58:41 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 13:58:42 : HR-Performer DOJ :  DOJ_EmailTemplate is available at location 08/09/2024 13:58:42 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 13:58:42 : HR-Performer DOJ :  EmpImageName path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\\2727
+08/09/2024 13:58:42 :  HR-Perfomer  :  ImageFormats List has been configured 
+08/09/2024 13:58:50 : HR-Performer :  Found Exception while GenerateGreetingCardTemplate EmpImage not found
+08/09/2024 13:58:50 :  HR-Performer  Get New Transaction :  ||||||| 2

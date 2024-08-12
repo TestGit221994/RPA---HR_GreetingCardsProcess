@@ -1,0 +1,766 @@
+﻿ Log File has been created : Log File Created Successfully 08/09/2024 22:35:51
+08/09/2024 22:36:07 :  HR-Performer  Get New Transaction :  ||||||| 1
+08/09/2024 22:36:08 : HR-Performer :  ||| Transaction No : 1 has been started |||
+08/09/2024 22:36:08 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3545
+EmpName : Heena
+EmpDepartment : Java
+EmailTemplate : DOB
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+EmpImageName : NA
+
+08/09/2024 22:36:08 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:09 : HR-Performer EmailTemplate :  Template Type is : DOB
+08/09/2024 22:36:11 : HR-Performer DOB :  Find emailTemplateNameOfDOB with RemotePath
+HR-GreetingsCardsData\EmailTemplate
+ Search Query : DOB_Template.html
+08/09/2024 22:36:12 : HR-Performer DOB : Found DOB_EmailTemplate is found at one drive location
+08/09/2024 22:36:12 : HR-Performer DOB :  DOB_EmailTemplate should be download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:12 : HR-Performer DOB :  DOB_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:12 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:13 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfBallonLeft path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfBallonLeft is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfBallonRight path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfBallonRight is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\birthDayFiftFooter.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfBirthdayGift  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfBirthdayGift is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfClouds path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfClouds is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:13 : HR-Performer DOB :  DOB_ImageOfHappyBirthday path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:13 : HR-Performer DOB :  IsExistsDOB_ImageOfHappyBirthday is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:13 : HR-Performer DOB :  Configure DOB-EmailTemplate with : 
+EmpName : Heena
+EmpWishName :  May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+08/09/2024 22:36:13 : HR-Performer DOB :  Configure Email Subject Line with : 
+Happy Birthday ::  Heena ( Java ) 
+08/09/2024 22:36:13 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:13 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Birthday:: Heena(Java)
+08/09/2024 22:36:15 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Birthday:: Heena(Java)
+08/09/2024 22:36:15 : HR-Performer :  ||| Transaction No : 1 has been process successfully. |||
+08/09/2024 22:36:16 :  HR-Performer  Get New Transaction :  ||||||| 2
+08/09/2024 22:36:16 : HR-Performer :  ||| Transaction No : 2 has been started |||
+08/09/2024 22:36:16 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3379
+EmpName : Jaswinder Singh
+EmpDepartment : Mobile Team
+EmailTemplate : DOB
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!
+EmpImageName : NA
+
+08/09/2024 22:36:16 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:16 : HR-Performer EmailTemplate :  Template Type is : DOB
+08/09/2024 22:36:16 : HR-Performer DOB :  Find emailTemplateNameOfDOB with RemotePath
+HR-GreetingsCardsData\EmailTemplate
+ Search Query : DOB_Template.html
+08/09/2024 22:36:16 : HR-Performer DOB : Found DOB_EmailTemplate is found at one drive location
+08/09/2024 22:36:16 : HR-Performer DOB :  DOB_EmailTemplate should be download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:16 : HR-Performer DOB :  DOB_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:16 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:17 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfBallonLeft path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfBallonLeft is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfBallonRight path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfBallonRight is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\birthDayFiftFooter.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfBirthdayGift  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfBirthdayGift is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfClouds path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfClouds is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:17 : HR-Performer DOB :  DOB_ImageOfHappyBirthday path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:17 : HR-Performer DOB :  IsExistsDOB_ImageOfHappyBirthday is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:17 : HR-Performer DOB :  Configure DOB-EmailTemplate with : 
+EmpName : Jaswinder Singh
+EmpWishName :  A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!
+08/09/2024 22:36:17 : HR-Performer DOB :  Configure Email Subject Line with : 
+Happy Birthday ::  Jaswinder Singh ( Mobile Team ) 
+08/09/2024 22:36:17 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:17 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Birthday:: Jaswinder Singh(Mobile Team)
+08/09/2024 22:36:17 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Birthday:: Jaswinder Singh(Mobile Team)
+08/09/2024 22:36:17 : HR-Performer :  ||| Transaction No : 2 has been process successfully. |||
+08/09/2024 22:36:18 :  HR-Performer  Get New Transaction :  ||||||| 3
+08/09/2024 22:36:18 : HR-Performer :  ||| Transaction No : 3 has been started |||
+08/09/2024 22:36:18 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3133
+EmpName : Nitika Shangari
+EmpDepartment : Indus - Functional
+EmailTemplate : DOB
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!
+EmpImageName : NA
+
+08/09/2024 22:36:18 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:18 : HR-Performer EmailTemplate :  Template Type is : DOB
+08/09/2024 22:36:18 : HR-Performer DOB :  Find emailTemplateNameOfDOB with RemotePath
+HR-GreetingsCardsData\EmailTemplate
+ Search Query : DOB_Template.html
+08/09/2024 22:36:18 : HR-Performer DOB : Found DOB_EmailTemplate is found at one drive location
+08/09/2024 22:36:18 : HR-Performer DOB :  DOB_EmailTemplate should be download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:18 : HR-Performer DOB :  DOB_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:18 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:19 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfBallonLeft path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfBallonLeft is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfBallonRight path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfBallonRight is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\birthDayFiftFooter.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfBirthdayGift  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfBirthdayGift is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfClouds path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfClouds is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:19 : HR-Performer DOB :  DOB_ImageOfHappyBirthday path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:19 : HR-Performer DOB :  IsExistsDOB_ImageOfHappyBirthday is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:19 : HR-Performer DOB :  Configure DOB-EmailTemplate with : 
+EmpName : Nitika Shangari
+EmpWishName :  Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!
+08/09/2024 22:36:19 : HR-Performer DOB :  Configure Email Subject Line with : 
+Happy Birthday ::  Nitika Shangari ( Indus - Functional ) 
+08/09/2024 22:36:19 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:19 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Birthday:: Nitika Shangari(Indus - Functional)
+08/09/2024 22:36:19 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Birthday:: Nitika Shangari(Indus - Functional)
+08/09/2024 22:36:19 : HR-Performer :  ||| Transaction No : 3 has been process successfully. |||
+08/09/2024 22:36:20 :  HR-Performer  Get New Transaction :  ||||||| 4
+08/09/2024 22:36:20 : HR-Performer :  ||| Transaction No : 4 has been started |||
+08/09/2024 22:36:20 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3338
+EmpName : Inbasekaran
+EmpDepartment : Creative Labs
+EmailTemplate : DOB
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+EmpImageName : NA
+
+08/09/2024 22:36:20 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:20 : HR-Performer EmailTemplate :  Template Type is : DOB
+08/09/2024 22:36:20 : HR-Performer DOB :  Find emailTemplateNameOfDOB with RemotePath
+HR-GreetingsCardsData\EmailTemplate
+ Search Query : DOB_Template.html
+08/09/2024 22:36:20 : HR-Performer DOB : Found DOB_EmailTemplate is found at one drive location
+08/09/2024 22:36:20 : HR-Performer DOB :  DOB_EmailTemplate should be download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:20 : HR-Performer DOB :  DOB_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:20 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:21 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfBallonLeft path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfBallonLeft is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfBallonRight path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfBallonRight is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\birthDayFiftFooter.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfBirthdayGift  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfBirthdayGift is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfClouds path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfClouds is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:21 : HR-Performer DOB :  DOB_ImageOfHappyBirthday path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:21 : HR-Performer DOB :  IsExistsDOB_ImageOfHappyBirthday is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:21 : HR-Performer DOB :  Configure DOB-EmailTemplate with : 
+EmpName : Inbasekaran
+EmpWishName :  May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+08/09/2024 22:36:21 : HR-Performer DOB :  Configure Email Subject Line with : 
+Happy Birthday ::  Inbasekaran ( Creative Labs ) 
+08/09/2024 22:36:21 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:21 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Birthday:: Inbasekaran(Creative Labs)
+08/09/2024 22:36:21 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Birthday:: Inbasekaran(Creative Labs)
+08/09/2024 22:36:21 : HR-Performer :  ||| Transaction No : 4 has been process successfully. |||
+08/09/2024 22:36:22 :  HR-Performer  Get New Transaction :  ||||||| 5
+08/09/2024 22:36:22 : HR-Performer :  ||| Transaction No : 5 has been started |||
+08/09/2024 22:36:22 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3739
+EmpName : Isha Bharti
+EmpDepartment : Open Source
+EmailTemplate : DOB
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+EmpImageName : NA
+
+08/09/2024 22:36:22 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:22 : HR-Performer EmailTemplate :  Template Type is : DOB
+08/09/2024 22:36:22 : HR-Performer DOB :  Find emailTemplateNameOfDOB with RemotePath
+HR-GreetingsCardsData\EmailTemplate
+ Search Query : DOB_Template.html
+08/09/2024 22:36:22 : HR-Performer DOB : Found DOB_EmailTemplate is found at one drive location
+08/09/2024 22:36:22 : HR-Performer DOB :  DOB_EmailTemplate should be download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:22 : HR-Performer DOB :  DOB_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:22 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:23 : HR-Performer DOB : DOB_EmailTemplate download at location : 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOB_Template.html
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfBallonLeft path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfBallonLeft is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfBallonRight path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfBallonRight is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonRight.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\birthDayFiftFooter.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfbirthDayFiftFooter is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BallonLeft.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfBirthdayGift  path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfBirthdayGift is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\BirthdayGift.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfClouds path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfClouds is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\Clouds.png
+08/09/2024 22:36:23 : HR-Performer DOB :  DOB_ImageOfHappyBirthday path is 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:23 : HR-Performer DOB :  IsExistsDOB_ImageOfHappyBirthday is found at location 
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOB\HappyBirthday.png
+08/09/2024 22:36:23 : HR-Performer DOB :  Configure DOB-EmailTemplate with : 
+EmpName : Isha Bharti
+EmpWishName :  May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+08/09/2024 22:36:23 : HR-Performer DOB :  Configure Email Subject Line with : 
+Happy Birthday ::  Isha Bharti ( Open Source ) 
+08/09/2024 22:36:23 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:23 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Birthday:: Isha Bharti(Open Source)
+08/09/2024 22:36:23 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Birthday:: Isha Bharti(Open Source)
+08/09/2024 22:36:23 : HR-Performer :  ||| Transaction No : 5 has been process successfully. |||
+08/09/2024 22:36:23 :  HR-Performer  Get New Transaction :  ||||||| 6
+08/09/2024 22:36:24 : HR-Performer :  ||| Transaction No : 6 has been started |||
+08/09/2024 22:36:24 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3027
+EmpName : Vegisetti Srinivas 
+EmpDepartment : Raptors - Functional
+EmailTemplate : DOJ
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate!
+EmpImageName : 3027
+
+08/09/2024 22:36:24 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:24 : HR-Performer EmailTemplate :  Template Type is : DOJ
+08/09/2024 22:36:24 : HR-Performer DOJ :  Find emailTemplateNameOfDOJ with pathHR-GreetingsCardsData\EmailTemplate with search query : DOJ_Template.html
+08/09/2024 22:36:24 : HR-Performer DOJ : Found DOJ_EmailTemplate is found at one drive location
+08/09/2024 22:36:24 : HR-Performer DOJ :  DOJ_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:24 : HR-Performer DOJ :  DOJ_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:24 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:25 : HR-Performer DOJ :  DOJ_EmailTemplate is available at location 08/09/2024 22:36:25 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:25 : HR-Performer DOJ :  EmpImageName path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\\3027
+08/09/2024 22:36:25 :  HR-Perfomer  :  ImageFormats List has been configured 
+08/09/2024 22:36:25 : HR-Performer DOJ :  Image Formats List is .PNG,.JPEG,.JPG
+08/09/2024 22:36:25 :  HR-Performer  DOJ : 3027.png is not matched.
+08/09/2024 22:36:26 :  HR-Performer  DOJ : 3027.jpeg is matched. 
+08/09/2024 22:36:26 : HR-Performer DOJ :  EmpImage has been found : 3027.jpeg
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\EmpImage/3027.jpeg
+08/09/2024 22:36:27 : HR-Performer DOJ :  DOJ_ImageOfLogo path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:27 : HR-Performer DOB :  DOJ_ImageOfLogo is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:27 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:27 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:27 : HR-Performer DOJ :  Configure DOJ-EmailTemplate with : Vegisetti Srinivas  Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate! Raptors - Functional 6
+08/09/2024 22:36:27 : HR-Performer DOJ :  Configure Email Subject Line with : Happy Work Anniversary ::  Vegisetti Srinivas  ( Raptors - Functional ) 
+08/09/2024 22:36:27 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:27 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Work Anniversary:: Vegisetti Srinivas (Raptors - Functional)
+08/09/2024 22:36:27 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Work Anniversary:: Vegisetti Srinivas (Raptors - Functional)
+08/09/2024 22:36:27 : HR-Performer :  ||| Transaction No : 6 has been process successfully. |||
+08/09/2024 22:36:27 :  HR-Performer  Get New Transaction :  ||||||| 7
+08/09/2024 22:36:28 : HR-Performer :  ||| Transaction No : 7 has been started |||
+08/09/2024 22:36:28 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3618
+EmpName : Gurwinder Singh
+EmpDepartment : Open Source
+EmailTemplate : DOJ
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate!
+EmpImageName : 3618
+
+08/09/2024 22:36:28 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:28 : HR-Performer EmailTemplate :  Template Type is : DOJ
+08/09/2024 22:36:28 : HR-Performer DOJ :  Find emailTemplateNameOfDOJ with pathHR-GreetingsCardsData\EmailTemplate with search query : DOJ_Template.html
+08/09/2024 22:36:28 : HR-Performer DOJ : Found DOJ_EmailTemplate is found at one drive location
+08/09/2024 22:36:28 : HR-Performer DOJ :  DOJ_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:28 : HR-Performer DOJ :  DOJ_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:28 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:29 : HR-Performer DOJ :  DOJ_EmailTemplate is available at location 08/09/2024 22:36:29 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:29 : HR-Performer DOJ :  EmpImageName path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\\3618
+08/09/2024 22:36:29 :  HR-Perfomer  :  ImageFormats List has been configured 
+08/09/2024 22:36:29 : HR-Performer DOJ :  Image Formats List is .PNG,.JPEG,.JPG
+08/09/2024 22:36:29 :  HR-Performer  DOJ : 3618.png is not matched.
+08/09/2024 22:36:30 :  HR-Performer  DOJ : 3618.jpeg is matched. 
+08/09/2024 22:36:30 : HR-Performer DOJ :  EmpImage has been found : 3618.jpeg
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\EmpImage/3618.jpeg
+08/09/2024 22:36:30 : HR-Performer DOJ :  DOJ_ImageOfLogo path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:30 : HR-Performer DOB :  DOJ_ImageOfLogo is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:30 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:30 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:30 : HR-Performer DOJ :  Configure DOJ-EmailTemplate with : Gurwinder Singh Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate! Open Source 7
+08/09/2024 22:36:30 : HR-Performer DOJ :  Configure Email Subject Line with : Happy Work Anniversary ::  Gurwinder Singh ( Open Source ) 
+08/09/2024 22:36:30 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:30 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Work Anniversary:: Gurwinder Singh(Open Source)
+08/09/2024 22:36:31 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Work Anniversary:: Gurwinder Singh(Open Source)
+08/09/2024 22:36:31 : HR-Performer :  ||| Transaction No : 7 has been process successfully. |||
+08/09/2024 22:36:31 :  HR-Performer  Get New Transaction :  ||||||| 8
+08/09/2024 22:36:31 : HR-Performer :  ||| Transaction No : 8 has been started |||
+08/09/2024 22:36:31 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3029
+EmpName : Tejinder Kumar
+EmpDepartment : Open Source
+EmailTemplate : DOJ
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate!
+EmpImageName : 3029
+
+08/09/2024 22:36:31 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:31 : HR-Performer EmailTemplate :  Template Type is : DOJ
+08/09/2024 22:36:31 : HR-Performer DOJ :  Find emailTemplateNameOfDOJ with pathHR-GreetingsCardsData\EmailTemplate with search query : DOJ_Template.html
+08/09/2024 22:36:31 : HR-Performer DOJ : Found DOJ_EmailTemplate is found at one drive location
+08/09/2024 22:36:31 : HR-Performer DOJ :  DOJ_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:32 : HR-Performer DOJ :  DOJ_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:32 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:32 : HR-Performer DOJ :  DOJ_EmailTemplate is available at location 08/09/2024 22:36:32 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:32 : HR-Performer DOJ :  EmpImageName path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\\3029
+08/09/2024 22:36:32 :  HR-Perfomer  :  ImageFormats List has been configured 
+08/09/2024 22:36:32 : HR-Performer DOJ :  Image Formats List is .PNG,.JPEG,.JPG
+08/09/2024 22:36:33 :  HR-Performer  DOJ : 3029.png is not matched.
+08/09/2024 22:36:33 :  HR-Performer  DOJ : 3029.jpeg is matched. 
+08/09/2024 22:36:33 : HR-Performer DOJ :  EmpImage has been found : 3029.jpeg
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\EmpImage/3029.jpeg
+08/09/2024 22:36:34 : HR-Performer DOJ :  DOJ_ImageOfLogo path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:34 : HR-Performer DOB :  DOJ_ImageOfLogo is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:34 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:34 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:34 : HR-Performer DOJ :  Configure DOJ-EmailTemplate with : Tejinder Kumar Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate! Open Source 12
+08/09/2024 22:36:34 : HR-Performer DOJ :  Configure Email Subject Line with : Happy Work Anniversary ::  Tejinder Kumar ( Open Source ) 
+08/09/2024 22:36:34 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:34 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Work Anniversary:: Tejinder Kumar(Open Source)
+08/09/2024 22:36:34 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Work Anniversary:: Tejinder Kumar(Open Source)
+08/09/2024 22:36:34 : HR-Performer :  ||| Transaction No : 8 has been process successfully. |||
+08/09/2024 22:36:35 :  HR-Performer  Get New Transaction :  ||||||| 9
+08/09/2024 22:36:35 : HR-Performer :  ||| Transaction No : 9 has been started |||
+08/09/2024 22:36:35 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 1940
+EmpName : Abhishek Vasudev
+EmpDepartment : Designing
+EmailTemplate : DOJ
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Filled with positivity, confidence, and honesty, we couldn’t have found anyone better than you for our team. Happy Work Anniversary, buddy!
+EmpImageName : 1940
+
+08/09/2024 22:36:35 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:35 : HR-Performer EmailTemplate :  Template Type is : DOJ
+08/09/2024 22:36:35 : HR-Performer DOJ :  Find emailTemplateNameOfDOJ with pathHR-GreetingsCardsData\EmailTemplate with search query : DOJ_Template.html
+08/09/2024 22:36:35 : HR-Performer DOJ : Found DOJ_EmailTemplate is found at one drive location
+08/09/2024 22:36:35 : HR-Performer DOJ :  DOJ_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:35 : HR-Performer DOJ :  DOJ_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:35 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:36 : HR-Performer DOJ :  DOJ_EmailTemplate is available at location 08/09/2024 22:36:36 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:36 : HR-Performer DOJ :  EmpImageName path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\\1940
+08/09/2024 22:36:36 :  HR-Perfomer  :  ImageFormats List has been configured 
+08/09/2024 22:36:36 : HR-Performer DOJ :  Image Formats List is .PNG,.JPEG,.JPG
+08/09/2024 22:36:36 :  HR-Performer  DOJ : 1940.png is not matched.
+08/09/2024 22:36:37 :  HR-Performer  DOJ : 1940.jpeg is matched. 
+08/09/2024 22:36:37 : HR-Performer DOJ :  EmpImage has been found : 1940.jpeg
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\EmpImage/1940.jpeg
+08/09/2024 22:36:38 : HR-Performer DOJ :  DOJ_ImageOfLogo path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:38 : HR-Performer DOB :  DOJ_ImageOfLogo is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:38 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:38 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:38 : HR-Performer DOJ :  Configure DOJ-EmailTemplate with : Abhishek Vasudev Filled with positivity, confidence, and honesty, we couldn’t have found anyone better than you for our team. Happy Work Anniversary, buddy! Designing 22
+08/09/2024 22:36:38 : HR-Performer DOJ :  Configure Email Subject Line with : Happy Work Anniversary ::  Abhishek Vasudev ( Designing ) 
+08/09/2024 22:36:38 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:38 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Work Anniversary:: Abhishek Vasudev(Designing)
+08/09/2024 22:36:38 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Work Anniversary:: Abhishek Vasudev(Designing)
+08/09/2024 22:36:38 : HR-Performer :  ||| Transaction No : 9 has been process successfully. |||
+08/09/2024 22:36:38 :  HR-Performer  Get New Transaction :  ||||||| 10
+08/09/2024 22:36:39 : HR-Performer :  ||| Transaction No : 10 has been started |||
+08/09/2024 22:36:39 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 2727
+EmpName : Karanbir Kaur
+EmpDepartment : Creative Labs
+EmailTemplate : DOJ
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Do you know it takes a person with strong character and willpower to stay dedicated and loyal at their job? And you are that person! Best wishes on your work anniversary.
+EmpImageName : 2727
+
+08/09/2024 22:36:39 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:39 : HR-Performer EmailTemplate :  Template Type is : DOJ
+08/09/2024 22:36:39 : HR-Performer DOJ :  Find emailTemplateNameOfDOJ with pathHR-GreetingsCardsData\EmailTemplate with search query : DOJ_Template.html
+08/09/2024 22:36:39 : HR-Performer DOJ : Found DOJ_EmailTemplate is found at one drive location
+08/09/2024 22:36:39 : HR-Performer DOJ :  DOJ_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:39 : HR-Performer DOJ :  DOJ_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:39 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:40 : HR-Performer DOJ :  DOJ_EmailTemplate is available at location 08/09/2024 22:36:40 : HR-Performer DOJ : DOJ_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOJ_Template.html
+08/09/2024 22:36:40 : HR-Performer DOJ :  EmpImageName path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\\2727
+08/09/2024 22:36:40 :  HR-Perfomer  :  ImageFormats List has been configured 
+08/09/2024 22:36:40 : HR-Performer DOJ :  Image Formats List is .PNG,.JPEG,.JPG
+08/09/2024 22:36:40 :  HR-Performer  DOJ : 2727.png is not matched.
+08/09/2024 22:36:40 :  HR-Performer  DOJ : 2727.jpeg is matched. 
+08/09/2024 22:36:40 : HR-Performer DOJ :  EmpImage has been found : 2727.jpeg
+C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\EmpImage/2727.jpeg
+08/09/2024 22:36:41 : HR-Performer DOJ :  DOJ_ImageOfLogo path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:41 : HR-Performer DOB :  DOJ_ImageOfLogo is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\logo.png
+08/09/2024 22:36:41 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:41 : HR-Performer DOJ :  DOJ_ImageOfWorkAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOJ\WorkAnniversary.png
+08/09/2024 22:36:41 : HR-Performer DOJ :  Configure DOJ-EmailTemplate with : Karanbir Kaur Do you know it takes a person with strong character and willpower to stay dedicated and loyal at their job? And you are that person! Best wishes on your work anniversary. Creative Labs 14
+08/09/2024 22:36:41 : HR-Performer DOJ :  Configure Email Subject Line with : Happy Work Anniversary ::  Karanbir Kaur ( Creative Labs ) 
+08/09/2024 22:36:41 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:41 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Work Anniversary:: Karanbir Kaur(Creative Labs)
+08/09/2024 22:36:41 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Work Anniversary:: Karanbir Kaur(Creative Labs)
+08/09/2024 22:36:41 : HR-Performer :  ||| Transaction No : 10 has been process successfully. |||
+08/09/2024 22:36:42 :  HR-Performer  Get New Transaction :  ||||||| 11
+08/09/2024 22:36:42 : HR-Performer :  ||| Transaction No : 11 has been started |||
+08/09/2024 22:36:42 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 2713
+EmpName : Renu Thakur
+EmpDepartment : Dot Net
+EmailTemplate : DOW
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Love is the master key that opens the gates of happiness.
+EmpImageName : NA
+
+08/09/2024 22:36:42 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:42 : HR-Performer EmailTemplate :  Template Type is : DOW
+08/09/2024 22:36:42 : HR-Performer DOW :  Find emailTemplateNameOfDOW with pathHR-GreetingsCardsData\EmailTemplate with search query : DOW_Template.html
+08/09/2024 22:36:42 : HR-Performer DOW : Found DOW_EmailTemplate is found at one drive location
+08/09/2024 22:36:42 : HR-Performer DOW :  DOW_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:42 : HR-Performer DOW :  DOW_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:42 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_EmailTemplate is available at location 08/09/2024 22:36:43 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfFlowerleft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfFlowerleft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfFlowersRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfFlowersRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfHands path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfHands is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:43 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:43 : HR-Performer DOW :  Configure DOW-EmailTemplate with : Renu Thakur Love is the master key that opens the gates of happiness.
+08/09/2024 22:36:43 : HR-Performer DOW :  Configure Email Subject Line with : Happy Wedding Aniversary ::  Renu Thakur ( Dot Net ) 
+08/09/2024 22:36:43 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:43 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Wedding Anniversary:: Renu Thakur(Dot Net)
+08/09/2024 22:36:44 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Wedding Anniversary:: Renu Thakur(Dot Net)
+08/09/2024 22:36:44 : HR-Performer :  ||| Transaction No : 11 has been process successfully. |||
+08/09/2024 22:36:44 :  HR-Performer  Get New Transaction :  ||||||| 12
+08/09/2024 22:36:44 : HR-Performer :  ||| Transaction No : 12 has been started |||
+08/09/2024 22:36:44 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 2567
+EmpName : Vivek Rana
+EmpDepartment : Open Source
+EmailTemplate : DOW
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : A successful marriage requires falling in love many times, always with the same person.
+EmpImageName : NA
+
+08/09/2024 22:36:44 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:44 : HR-Performer EmailTemplate :  Template Type is : DOW
+08/09/2024 22:36:44 : HR-Performer DOW :  Find emailTemplateNameOfDOW with pathHR-GreetingsCardsData\EmailTemplate with search query : DOW_Template.html
+08/09/2024 22:36:45 : HR-Performer DOW : Found DOW_EmailTemplate is found at one drive location
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:45 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_EmailTemplate is available at location 08/09/2024 22:36:45 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfFlowerleft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfFlowerleft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfFlowersRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfFlowersRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfHands path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfHands is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:45 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:45 : HR-Performer DOW :  Configure DOW-EmailTemplate with : Vivek Rana A successful marriage requires falling in love many times, always with the same person.
+08/09/2024 22:36:45 : HR-Performer DOW :  Configure Email Subject Line with : Happy Wedding Aniversary ::  Vivek Rana ( Open Source ) 
+08/09/2024 22:36:45 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:45 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Wedding Anniversary:: Vivek Rana(Open Source)
+08/09/2024 22:36:46 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Wedding Anniversary:: Vivek Rana(Open Source)
+08/09/2024 22:36:46 : HR-Performer :  ||| Transaction No : 12 has been process successfully. |||
+08/09/2024 22:36:46 :  HR-Performer  Get New Transaction :  ||||||| 13
+08/09/2024 22:36:46 : HR-Performer :  ||| Transaction No : 13 has been started |||
+08/09/2024 22:36:46 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3027
+EmpName : Vegisetti Srinivas 
+EmpDepartment : Raptors - Functional
+EmailTemplate : DOW
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : A successful marriage requires falling in love many times, always with the same person.
+EmpImageName : NA
+
+08/09/2024 22:36:46 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:46 : HR-Performer EmailTemplate :  Template Type is : DOW
+08/09/2024 22:36:46 : HR-Performer DOW :  Find emailTemplateNameOfDOW with pathHR-GreetingsCardsData\EmailTemplate with search query : DOW_Template.html
+08/09/2024 22:36:47 : HR-Performer DOW : Found DOW_EmailTemplate is found at one drive location
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:47 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_EmailTemplate is available at location 08/09/2024 22:36:47 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfFlowerleft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfFlowerleft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfFlowersRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfFlowersRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfHands path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfHands is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:47 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:47 : HR-Performer DOW :  Configure DOW-EmailTemplate with : Vegisetti Srinivas  A successful marriage requires falling in love many times, always with the same person.
+08/09/2024 22:36:47 : HR-Performer DOW :  Configure Email Subject Line with : Happy Wedding Aniversary ::  Vegisetti Srinivas  ( Raptors - Functional ) 
+08/09/2024 22:36:47 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:47 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Wedding Anniversary:: Vegisetti Srinivas (Raptors - Functional)
+08/09/2024 22:36:48 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Wedding Anniversary:: Vegisetti Srinivas (Raptors - Functional)
+08/09/2024 22:36:48 : HR-Performer :  ||| Transaction No : 13 has been process successfully. |||
+08/09/2024 22:36:48 :  HR-Performer  Get New Transaction :  ||||||| 14
+08/09/2024 22:36:48 : HR-Performer :  ||| Transaction No : 14 has been started |||
+08/09/2024 22:36:48 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3618
+EmpName : Gurwinder Singh
+EmpDepartment : Open Source
+EmailTemplate : DOW
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : The best thing to hold onto in life is each other
+EmpImageName : NA
+
+08/09/2024 22:36:48 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:48 : HR-Performer EmailTemplate :  Template Type is : DOW
+08/09/2024 22:36:48 : HR-Performer DOW :  Find emailTemplateNameOfDOW with pathHR-GreetingsCardsData\EmailTemplate with search query : DOW_Template.html
+08/09/2024 22:36:49 : HR-Performer DOW : Found DOW_EmailTemplate is found at one drive location
+08/09/2024 22:36:49 : HR-Performer DOW :  DOW_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:49 : HR-Performer DOW :  DOW_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:49 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_EmailTemplate is available at location 08/09/2024 22:36:50 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfFlowerleft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfFlowerleft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfFlowersRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfFlowersRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfHands path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfHands is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:50 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:50 : HR-Performer DOW :  Configure DOW-EmailTemplate with : Gurwinder Singh The best thing to hold onto in life is each other
+08/09/2024 22:36:50 : HR-Performer DOW :  Configure Email Subject Line with : Happy Wedding Aniversary ::  Gurwinder Singh ( Open Source ) 
+08/09/2024 22:36:50 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:50 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Wedding Anniversary:: Gurwinder Singh(Open Source)
+08/09/2024 22:36:50 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Wedding Anniversary:: Gurwinder Singh(Open Source)
+08/09/2024 22:36:50 : HR-Performer :  ||| Transaction No : 14 has been process successfully. |||
+08/09/2024 22:36:50 :  HR-Performer  Get New Transaction :  ||||||| 15
+08/09/2024 22:36:50 : HR-Performer :  ||| Transaction No : 15 has been started |||
+08/09/2024 22:36:50 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 3029
+EmpName : Tejinder Kumar
+EmpDepartment : Open Source
+EmailTemplate : DOW
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : The best thing to hold onto in life is each other
+EmpImageName : NA
+
+08/09/2024 22:36:50 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:50 : HR-Performer EmailTemplate :  Template Type is : DOW
+08/09/2024 22:36:50 : HR-Performer DOW :  Find emailTemplateNameOfDOW with pathHR-GreetingsCardsData\EmailTemplate with search query : DOW_Template.html
+08/09/2024 22:36:51 : HR-Performer DOW : Found DOW_EmailTemplate is found at one drive location
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:51 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_EmailTemplate is available at location 08/09/2024 22:36:51 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfFlowerleft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfFlowerleft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfFlowersRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfFlowersRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfHands path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfHands is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:51 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:51 : HR-Performer DOW :  Configure DOW-EmailTemplate with : Tejinder Kumar The best thing to hold onto in life is each other
+08/09/2024 22:36:51 : HR-Performer DOW :  Configure Email Subject Line with : Happy Wedding Aniversary ::  Tejinder Kumar ( Open Source ) 
+08/09/2024 22:36:51 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:51 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Wedding Anniversary:: Tejinder Kumar(Open Source)
+08/09/2024 22:36:52 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Wedding Anniversary:: Tejinder Kumar(Open Source)
+08/09/2024 22:36:52 : HR-Performer :  ||| Transaction No : 15 has been process successfully. |||
+08/09/2024 22:36:52 :  HR-Performer  Get New Transaction :  ||||||| 16
+08/09/2024 22:36:52 : HR-Performer :  ||| Transaction No : 16 has been started |||
+08/09/2024 22:36:52 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 1940
+EmpName : Abhishek Vasudev
+EmpDepartment : Designing
+EmailTemplate : DOW
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : The best thing to hold onto in life is each other
+EmpImageName : NA
+
+08/09/2024 22:36:52 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:52 : HR-Performer EmailTemplate :  Template Type is : DOW
+08/09/2024 22:36:52 : HR-Performer DOW :  Find emailTemplateNameOfDOW with pathHR-GreetingsCardsData\EmailTemplate with search query : DOW_Template.html
+08/09/2024 22:36:53 : HR-Performer DOW : Found DOW_EmailTemplate is found at one drive location
+08/09/2024 22:36:53 : HR-Performer DOW :  DOW_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:53 : HR-Performer DOW :  DOW_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:53 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_EmailTemplate is available at location 08/09/2024 22:36:54 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfFlowerleft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfFlowerleft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfFlowersRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfFlowersRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfHands path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfHands is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:54 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:54 : HR-Performer DOW :  Configure DOW-EmailTemplate with : Abhishek Vasudev The best thing to hold onto in life is each other
+08/09/2024 22:36:54 : HR-Performer DOW :  Configure Email Subject Line with : Happy Wedding Aniversary ::  Abhishek Vasudev ( Designing ) 
+08/09/2024 22:36:54 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:54 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Wedding Anniversary:: Abhishek Vasudev(Designing)
+08/09/2024 22:36:54 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Wedding Anniversary:: Abhishek Vasudev(Designing)
+08/09/2024 22:36:54 : HR-Performer :  ||| Transaction No : 16 has been process successfully. |||
+08/09/2024 22:36:54 :  HR-Performer  Get New Transaction :  ||||||| 17
+08/09/2024 22:36:54 : HR-Performer :  ||| Transaction No : 17 has been started |||
+08/09/2024 22:36:54 : HR-Performer Transaction:  Transaction Details are  : 
+EmpID : 2727
+EmpName : Karanbir Kaur
+EmpDepartment : Creative Labs
+EmailTemplate : DOW
+EmpEmailID : sakadav@bugraptors.com
+EmpWishesName : Love is the master key that opens the gates of happiness.
+EmpImageName : NA
+
+08/09/2024 22:36:54 :  HR-Performer  EmailTeample :  ||| GenerateEmailGreetingCardTemplate ||| 
+08/09/2024 22:36:54 : HR-Performer EmailTemplate :  Template Type is : DOW
+08/09/2024 22:36:54 : HR-Performer DOW :  Find emailTemplateNameOfDOW with pathHR-GreetingsCardsData\EmailTemplate with search query : DOW_Template.html
+08/09/2024 22:36:55 : HR-Performer DOW : Found DOW_EmailTemplate is found at one drive location
+08/09/2024 22:36:55 : HR-Performer DOW :  DOW_EmailTemplate should be download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\
+08/09/2024 22:36:55 : HR-Performer DOW :  DOW_EmailTemplateFolderPath is Exist.
+08/09/2024 22:36:55 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:55 : HR-Performer DOW :  DOW_EmailTemplate is available at location 08/09/2024 22:36:55 : HR-Performer DOW : DOW_EmailTemplate download at location : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\EmailTemplate\DOW_Template.html
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfFlowerleft path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfFlowerleft is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowerleft.png
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfFlowersRight path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfFlowersRight is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\flowersRight.png
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfHands path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfHands is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\hands.png
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary path is C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:56 : HR-Performer DOW :  DOW_ImageOfWeddingAnniversary is found at location C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Performer-Process\HR-GreetingsCardsData\DOW\weddinganniversary.png
+08/09/2024 22:36:56 : HR-Performer DOW :  Configure DOW-EmailTemplate with : Karanbir Kaur Love is the master key that opens the gates of happiness.
+08/09/2024 22:36:56 : HR-Performer DOW :  Configure Email Subject Line with : Happy Wedding Aniversary ::  Karanbir Kaur ( Creative Labs ) 
+08/09/2024 22:36:56 : HR-Performer :  ||| SendEmailTemplateToEmp |||
+08/09/2024 22:36:56 :  HR-Performer  SendMail :  Send Mail with Details 
+EmpEmailID : sakadav@bugraptors.com
+SubjectLine : Happy Wedding Anniversary:: Karanbir Kaur(Creative Labs)
+08/09/2024 22:36:56 : HR-Performer Send Mail :  ||| EMail has been send Successfully with details
+EmpMailID : sakadav@bugraptors.com
+ SubjectLine : Happy Wedding Anniversary:: Karanbir Kaur(Creative Labs)
+08/09/2024 22:36:56 : HR-Performer :  ||| Transaction No : 17 has been process successfully. |||
+08/09/2024 22:36:56 :  HR-Performer  Get New Transaction :  ||||||| 18
