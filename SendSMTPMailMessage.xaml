@@ -5,8 +5,9 @@
     <x:Property Name="in_str_EmailTemplate" Type="InArgument(x:String)" />
     <x:Property Name="in_LogFilePath" Type="InArgument(x:String)" />
     <x:Property Name="in_SupportMailID" Type="InArgument(x:String)" />
+    <x:Property Name="in_CCEmailID" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>933,781</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1239,781</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -150,7 +151,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Account="[in_SupportMailID]" Body="[in_str_EmailTemplate.Trim]" ContinueOnError="False" DisplayName="SendGreetingCardsMailToEmp" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[in_SubjectLine.Trim]" TimeoutMS="200000" To="[in_str_EmpEmailID.Trim]">
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Account="[in_SupportMailID]" Body="[in_str_EmailTemplate.Trim]" Cc="[in_CCEmailID.ToString.Trim.Split(&quot;,&quot;)(0).ToString.Trim+&quot;;&quot;+in_CCEmailID.ToString.Trim.Split(&quot;,&quot;)(1).ToString.Trim]" ContinueOnError="False" DisplayName="SendGreetingCardsMailToEmp" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[in_SubjectLine.Trim]" TimeoutMS="200000" To="[in_str_EmpEmailID.Trim]">
             <ui:SendOutlookMail.Files>
               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
             </ui:SendOutlookMail.Files>
